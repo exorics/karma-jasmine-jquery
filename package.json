@@ -18,6 +18,7 @@
     "karma-jasmine-jquery": "^0.1.1",
     "karma-jquery": "^0.1.0",
     "karma-junit-reporter": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.2",
     "karma-seajs": "^0.1.1",
     "seajs": "^3.0.2"
   }
