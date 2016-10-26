@@ -21,8 +21,16 @@
 
             //获取src目录下的文件路径作为seajs模块的key
             if (/\/src\//.test(file)) {
-                var name = file.match(/\/src\/([^.]+)\.js/)[1];
-                alias[name] = file;
+                console.log(file);
+                if(file == '/base/node_modules/karma-jasmine-html-reporter/src/css/jasmine.css' 
+                    || file == '/base/node_modules/karma-jasmine-html-reporter/src/lib/html.jasmine.reporter.js' 
+                    || file == '/base/node_modules/karma-jasmine-html-reporter/src/lib/adapter.js'){
+                    continue;
+                }else{
+                   var name = file.match(/\/src\/([^.]+)\.js/)[1];
+                    alias[name] = file; 
+                }
+                
             }
         }
     }
